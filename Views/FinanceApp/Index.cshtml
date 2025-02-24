@@ -1,0 +1,58 @@
+﻿@model IEnumerable<Expance.Models.FinanceApp>
+
+<div style="display:flex; justify-content:space-between; margin-bottom:5px">
+<h2>My Expences</h2>
+<a asp-action="Create" class="btn btn-primary">Add Expense</a>
+</div>
+
+<div class="container">
+
+  <table class="table table-bordered">
+    <thead class="table-light">
+        <tr>
+            <th>Discription</th>
+            <th>Amount</th>
+            <th>Category</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.Description</td>
+                    <td>@item.Amount $</td>
+                    <td>@item.Category</td>
+                    <td>@item.Date.ToString("yyyy-MM-dd")</td>
+                </tr>
+            }
+    </tbody>
+  </table>
+
+</div>
+<h2>Expence Overview 📊</h2>
+
+<div style="display:flex; justify-content:center;">
+    <canvas class="w-25 h-25" id="myChart"></canvas>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart');
+    fetch('/FinanceApp/GetChart')
+         .then(Response => Response.json())
+         .then(data => {
+            new Chart(ctx, {
+                type: 'pie',
+                data: {
+                    labels: data.map(d => d.category),
+                    datasets: [{
+                        data: data.map(d => d.total),
+                    }]
+                }
+            });
+        })
+    
+</script>

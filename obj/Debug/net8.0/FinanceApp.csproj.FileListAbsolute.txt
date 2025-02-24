@@ -1,0 +1,8 @@
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.csproj.AssemblyReference.cache
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.AssemblyInfoInputs.cache
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.AssemblyInfo.cs
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.csproj.CoreCompileInputs.cache
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.RazorAssemblyInfo.cache
+C:\Programming2024\C_sharp\Expance\Expance\obj\Debug\net8.0\FinanceApp.RazorAssemblyInfo.cs
